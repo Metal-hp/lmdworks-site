@@ -141,12 +141,21 @@ nav ul a:hover { color: var(--sand); }
 }
 
 .hero-label {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
   font-family: var(--font-mono);
   font-size: 0.75rem;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--rust-light);
   margin-bottom: 1.25rem;
+}
+
+.ase-logo {
+  height: 28px;
+  width: auto;
+  opacity: 0.9;
 }
 
 .hero h1 {
@@ -458,6 +467,19 @@ footer .container {
   flex-direction: column;
   align-items: center;
   gap: 1rem;
+}
+
+.footer-logos {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.footer-ase-logo {
+  height: 36px;
+  width: auto;
+  opacity: 0.6;
+  filter: brightness(0) invert(1);
 }
 
 .footer-logo {
