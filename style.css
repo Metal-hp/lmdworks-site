@@ -476,9 +476,58 @@ footer p {
   color: #7a6a55;
 }
 
+/* ===== MOBILE CALL BAR ===== */
+.mobile-cta-bar { display: none; }
+
 /* ===== RESPONSIVE ===== */
 @media (max-width: 640px) {
+  body { padding-bottom: 64px; }
+
   nav ul { gap: 1rem; }
   nav ul li:not(:last-child) { display: none; }
   .hero { min-height: 80vh; }
+
+  .contact-phone {
+    display: block;
+    padding: 1rem 1.5rem;
+    background: var(--ink);
+    color: var(--sand) !important;
+    text-align: center;
+    width: 100%;
+  }
+
+  .mobile-cta-bar {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 200;
+    background: var(--rust);
+    border-top: 2px solid var(--rust-light);
+  }
+
+  .mobile-cta-bar a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    padding: 0.9rem 1rem;
+    color: var(--sand);
+  }
+
+  .mobile-cta-label {
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    opacity: 0.85;
+  }
+
+  .mobile-cta-num {
+    font-family: var(--font-head);
+    font-size: 1.25rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+  }
 }
