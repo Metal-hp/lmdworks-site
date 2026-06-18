@@ -478,8 +478,7 @@ footer .container {
 .footer-ase-logo {
   height: 36px;
   width: auto;
-  opacity: 0.6;
-  filter: brightness(0) invert(1);
+  opacity: 0.75;
 }
 
 .footer-logo {
